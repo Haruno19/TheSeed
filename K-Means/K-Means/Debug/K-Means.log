@@ -1,0 +1,17 @@
+﻿  main.cpp
+D:\Projects\VisualStudio\K-Means\K-Means\main.cpp(55,12): warning C4244: 'argomento': conversione da 'time_t' a 'unsigned int'. Possibile perdita di dati.
+D:\Projects\VisualStudio\K-Means\K-Means\main.cpp(53,13): warning C4101: 'height': variabile locale senza riferimenti
+D:\Projects\VisualStudio\K-Means\K-Means\main.cpp(53,6): warning C4101: 'width': variabile locale senza riferimenti
+D:\Projects\VisualStudio\K-Means\K-Means\main.cpp(232,38): warning C4244: 'argomento': conversione da 'int' a 'float'. Possibile perdita di dati.
+D:\Projects\VisualStudio\K-Means\K-Means\main.cpp(232,33): warning C4244: 'argomento': conversione da 'int' a 'float'. Possibile perdita di dati.
+D:\Projects\VisualStudio\K-Means\K-Means\main.cpp(232,21): warning C4244: 'argomento': conversione da 'int' a 'float'. Possibile perdita di dati.
+D:\Projects\VisualStudio\K-Means\K-Means\main.cpp(245,38): warning C4244: 'argomento': conversione da 'int' a 'float'. Possibile perdita di dati.
+D:\Projects\VisualStudio\K-Means\K-Means\main.cpp(245,33): warning C4244: 'argomento': conversione da 'int' a 'float'. Possibile perdita di dati.
+D:\Projects\VisualStudio\K-Means\K-Means\main.cpp(245,21): warning C4244: 'argomento': conversione da 'int' a 'float'. Possibile perdita di dati.
+D:\Projects\VisualStudio\K-Means\K-Means\main.cpp(263,27): warning C4244: 'argomento': conversione da 'int' a 'GLfloat'. Possibile perdita di dati.
+D:\Projects\VisualStudio\K-Means\K-Means\main.cpp(263,18): warning C4244: 'argomento': conversione da 'int' a 'GLfloat'. Possibile perdita di dati.
+D:\Projects\VisualStudio\K-Means\K-Means\main.cpp(264,33): warning C4244: 'argomento': conversione da 'int' a 'GLfloat'. Possibile perdita di dati.
+D:\Projects\VisualStudio\K-Means\K-Means\main.cpp(264,21): warning C4244: 'argomento': conversione da 'int' a 'GLfloat'. Possibile perdita di dati.
+D:\Projects\VisualStudio\K-Means\K-Means\main.cpp(304,14): warning C4244: 'return': conversione da 'double' a 'int'. Possibile perdita di dati.
+D:\Projects\VisualStudio\K-Means\K-Means\main.cpp(327): warning C4715: 'InitWindow': non tutti i percorsi di controllo restituiscono un valore
+  K-Means.vcxproj -> D:\Projects\VisualStudio\K-Means\Debug\K-Means.exe
