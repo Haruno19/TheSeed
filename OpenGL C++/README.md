@@ -16,7 +16,7 @@ GLFW: https://www.glfw.org/
 
 ------------------------------------------------------------------------------------------------
 
-## FUNCTION SHORTCUTS
+## FUNCTIONS
 Shortcuts name are taken from BGI library.
 
 CORE FUNCTIONS
