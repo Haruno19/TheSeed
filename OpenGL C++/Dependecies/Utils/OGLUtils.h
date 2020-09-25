@@ -79,6 +79,7 @@ void SetColor(int r, int g, int b) { glColor3f(r,g,b); }
 //Shapes
 void Circle(float x, float y, float r);
 void Line(int x1, int y1, int x2, int y2);
+void Rect(int x1, int y1, int width, int height);
 
 
 
@@ -88,6 +89,7 @@ int InitWindow(int width, int height)
 {	
 	MAXX = width;
 	MAXY = height;
+
 	if (!glfwInit())
 		return 1;
 
@@ -141,5 +143,22 @@ void Line(int x1, int y1, int x2, int y2)
 	glBegin(GL_LINES);
 		glVertex2f(x1, y1);
 		glVertex2f(x2, y2);
+	glEnd();
+}
+
+void Rect(int x, int y, int width, int height)
+{
+	glBegin(GL_LINES);
+		glVertex2f(x, y);
+		glVertex2f(x, y+height);
+		
+		glVertex2f(x+width, y+height);
+		glVertex2f(x+width, y);
+
+		glVertex2f(x, y);
+		glVertex2f(x+width, y);
+
+		glVertex2f(x, y+height);
+		glVertex2f(x + width, y + height);
 	glEnd();
 }
