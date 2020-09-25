@@ -1,8 +1,8 @@
 
-  /------------------------------------------------------------------------\
-  | OPENGL UTILITIES FOR VISUAL STUDIO C++ USING GLFW3 OPEN-SOURCE LIBRARY |
-  |									                ver. 09.2020 by github.com/Haruno19    |
-  \------------------------------------------------------------------------/
+
+ OPENGL UTILITIES FOR VISUAL STUDIO C++ USING GLFW3 OPEN-SOURCE LIBRARY 
+ ver. 09.2020 by github.com/Haruno19    
+
 GLFW: https://www.glfw.org/
 
 
