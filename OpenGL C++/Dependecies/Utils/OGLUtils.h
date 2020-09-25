@@ -21,18 +21,30 @@ Shortcuts name are taken from BGI library.
 
 CORE FUNCTIONS
 InitWindow(int width, int height)	 - Initializes the window of the specified size
-CloseGraph()						 - Destroys all the windows
-ClearDevice()					 	 - Blacks out the whole window
-UpdateWindow()						 - Renders all the drawings on the window
+CloseGraph()				 - Destroys all the windows
+ClearDevice()				 - Blacks out the whole window
+UpdateWindow()				 - Renders all the drawings on the window
 
 COLORS
 SetColor(int r, int g, int b)		 - The next drawing and the following ones will be this color RGB
 
 SHAPES (to render all the drawings you need to call UpdateWindow() once you finished drawing)
-Circle(int x, int y, int r)			 - Draws a cirlce, x and y are refering to the center
-Line(int x1, int y1, int x2, int y2) - Draws a line from (x1;y1) to (x2;y2)
+Circle(int x, int y, int r)			- Draws a cirlce, x and y are refering to the center
+Line(int x1, int y1, int x2, int y2) 		- Draws a line from (x1;y1) to (x2;y2)
+Rect(int x, int y, int width, int height) 	- Draws a rectangle, x and y are the top-left corner's coordinates
 
 -------------------------------------------------------------------------------------------------
+
+	VARIABLES
+
+CORE
+(int) MAXX 		- Int value for the window's width
+(int) MAXY 		- Int value for the window's height
+			  Both are initialized to NULL and set with InitWindow()
+
+
+-------------------------------------------------------------------------------------------------
+
 
 	EXAMPLES
 
