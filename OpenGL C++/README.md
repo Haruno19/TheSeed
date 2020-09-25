@@ -9,9 +9,9 @@ GLFW: https://www.glfw.org/
 ## HOW TO USE on VISUAL STUDIO 2019 C++ EMPTY PROJECT
 
 1. Copy Dependencies Folder into Solution Directory
-2. Properties > C++ > General > Additional Include Directories		: $(SolutionDir)Dependecies/GLFW/include;$(SolutionDir)Dependecies/Utils
-3. Properties > Linker > General > Additional Library Directories	: $(SolutionDir)Dependecies/GLFW/lib-vc2019
-4. Properties > Linker > Input > Additional Dependencies	     add: glfw3.lib; opengl32.lib
+2. Properties > C++ > General > Additional Include Directories          : $(SolutionDir)Dependecies/GLFW/include;$(SolutionDir)Dependecies/Utils
+3. Properties > Linker > General > Additional Library Directories       : $(SolutionDir)Dependecies/GLFW/lib-vc2019
+4. Properties > Linker > Input > Additional Dependencies       	     add: glfw3.lib; opengl32.lib
 5. Include "OGLUtils.h"
 
 ------------------------------------------------------------------------------------------------
@@ -19,18 +19,18 @@ GLFW: https://www.glfw.org/
 ## FUNCTIONS
 Shortcuts name are taken from BGI library.
 
-CORE FUNCTIONS
+**CORE FUNCTIONS**
 InitWindow(int width, int height)	 - Initializes the window of the specified size
-CloseGraph()						 - Destroys all the windows
-ClearDevice()					 	 - Blacks out the whole window
-UpdateWindow()						 - Renders all the drawings on the window
+CloseGraph()				 - Destroys all the windows
+ClearDevice()				 - Blacks out the whole window
+UpdateWindow()				 - Renders all the drawings on the window
 
-COLORS
+**COLORS**
 SetColor(int r, int g, int b)		 - The next drawing and the following ones will be this color RGB
 
-SHAPES (to render all the drawings you need to call UpdateWindow() once you finished drawing)
-Circle(int x, int y, int r)			 - Draws a cirlce, x and y are refering to the center
-Line(int x1, int y1, int x2, int y2) - Draws a line from (x1;y1) to (x2;y2)
+**SHAPES** (to render all the drawings you need to call UpdateWindow() once you finished drawing)
+Circle(int x, int y, int r)		- Draws a cirlce, x and y are refering to the center
+Line(int x1, int y1, int x2, int y2) 	- Draws a line from (x1;y1) to (x2;y2)
 
 -------------------------------------------------------------------------------------------------
 
