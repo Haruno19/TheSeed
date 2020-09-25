@@ -21,27 +21,23 @@ Shortcuts name are taken from BGI library.
 
 **CORE FUNCTIONS**
 
-InitWindow(int width, int height)	 - Initializes the window of the specified size
-
-CloseGraph()				 - Destroys all the windows
-
-ClearDevice()				 - Blacks out the whole window
-
-UpdateWindow()				 - Renders all the drawings on the window
+	InitWindow(int width, int height)	 - Initializes the window of the specified size
+	CloseGraph()				 - Destroys all the windows
+	ClearDevice()				 - Blacks out the whole window
+	UpdateWindow()				 - Renders all the drawings on the window
 
 
 
 **COLORS**
 
-SetColor(int r, int g, int b)		 - The next drawing and the following ones will be this color RGB
+	SetColor(int r, int g, int b)		 - The next drawing and the following ones will be this color RGB
 
 
 
 **SHAPES** (to render all the drawings you need to call UpdateWindow() once you finished drawing)
 
-Circle(int x, int y, int r)		- Draws a cirlce, x and y are refering to the center
-
-Line(int x1, int y1, int x2, int y2) 	- Draws a line from (x1;y1) to (x2;y2)
+	Circle(int x, int y, int r)		- Draws a cirlce, x and y are refering to the center
+	Line(int x1, int y1, int x2, int y2) 	- Draws a line from (x1;y1) to (x2;y2)
 
 -------------------------------------------------------------------------------------------------
 
@@ -53,7 +49,7 @@ Here's and example code to draw a red line and a blue circle
 
 	int main()
 	{
-		InitWindow(500,500);	//initializes a 500x500 window
+		InitWindow(500,500);		//initializes a 500x500 window
 	
 		SetColor(255,0,0);		//sets color to red
 		Line(0,0,500,500);		//draws a line from the top left corner to the bottom right
