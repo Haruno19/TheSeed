@@ -6,7 +6,7 @@ GLFW: https://www.glfw.org/
 
 -----------------------------------------------------------------------------------------------
 
-## HOW TO USE on VISUAL STUDIO 2019 C++ EMPTY PROJEC
+## HOW TO USE on VISUAL STUDIO 2019 C++ EMPTY PROJECT
 
 1. Copy Dependencies Folder into Solution Directory
 2. Properties > C++ > General > Additional Include Directories		: $(SolutionDir)Dependecies/GLFW/include;$(SolutionDir)Dependecies/Utils
