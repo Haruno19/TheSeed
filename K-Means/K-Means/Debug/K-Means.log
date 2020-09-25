@@ -1,17 +1,36 @@
 ﻿  main.cpp
-D:\Projects\VisualStudio\K-Means\K-Means\main.cpp(55,12): warning C4244: 'argomento': conversione da 'time_t' a 'unsigned int'. Possibile perdita di dati.
-D:\Projects\VisualStudio\K-Means\K-Means\main.cpp(53,13): warning C4101: 'height': variabile locale senza riferimenti
-D:\Projects\VisualStudio\K-Means\K-Means\main.cpp(53,6): warning C4101: 'width': variabile locale senza riferimenti
-D:\Projects\VisualStudio\K-Means\K-Means\main.cpp(232,38): warning C4244: 'argomento': conversione da 'int' a 'float'. Possibile perdita di dati.
-D:\Projects\VisualStudio\K-Means\K-Means\main.cpp(232,33): warning C4244: 'argomento': conversione da 'int' a 'float'. Possibile perdita di dati.
-D:\Projects\VisualStudio\K-Means\K-Means\main.cpp(232,21): warning C4244: 'argomento': conversione da 'int' a 'float'. Possibile perdita di dati.
-D:\Projects\VisualStudio\K-Means\K-Means\main.cpp(245,38): warning C4244: 'argomento': conversione da 'int' a 'float'. Possibile perdita di dati.
-D:\Projects\VisualStudio\K-Means\K-Means\main.cpp(245,33): warning C4244: 'argomento': conversione da 'int' a 'float'. Possibile perdita di dati.
-D:\Projects\VisualStudio\K-Means\K-Means\main.cpp(245,21): warning C4244: 'argomento': conversione da 'int' a 'float'. Possibile perdita di dati.
-D:\Projects\VisualStudio\K-Means\K-Means\main.cpp(263,27): warning C4244: 'argomento': conversione da 'int' a 'GLfloat'. Possibile perdita di dati.
-D:\Projects\VisualStudio\K-Means\K-Means\main.cpp(263,18): warning C4244: 'argomento': conversione da 'int' a 'GLfloat'. Possibile perdita di dati.
-D:\Projects\VisualStudio\K-Means\K-Means\main.cpp(264,33): warning C4244: 'argomento': conversione da 'int' a 'GLfloat'. Possibile perdita di dati.
-D:\Projects\VisualStudio\K-Means\K-Means\main.cpp(264,21): warning C4244: 'argomento': conversione da 'int' a 'GLfloat'. Possibile perdita di dati.
-D:\Projects\VisualStudio\K-Means\K-Means\main.cpp(304,14): warning C4244: 'return': conversione da 'double' a 'int'. Possibile perdita di dati.
-D:\Projects\VisualStudio\K-Means\K-Means\main.cpp(327): warning C4715: 'InitWindow': non tutti i percorsi di controllo restituiscono un valore
+D:\Projects\VisualStudio\K-Means\Dependecies\Utils\OGLUtils.h(90,54): warning C4244: 'argomento': conversione da 'int' a 'GLfloat'. Possibile perdita di dati.
+D:\Projects\VisualStudio\K-Means\Dependecies\Utils\OGLUtils.h(90,51): warning C4244: 'argomento': conversione da 'int' a 'GLfloat'. Possibile perdita di dati.
+D:\Projects\VisualStudio\K-Means\Dependecies\Utils\OGLUtils.h(90,48): warning C4244: 'argomento': conversione da 'int' a 'GLfloat'. Possibile perdita di dati.
+D:\Projects\VisualStudio\K-Means\Dependecies\Utils\OGLUtils.h(155,17): warning C4244: 'argomento': conversione da 'int' a 'GLfloat'. Possibile perdita di dati.
+D:\Projects\VisualStudio\K-Means\Dependecies\Utils\OGLUtils.h(155,13): warning C4244: 'argomento': conversione da 'int' a 'GLfloat'. Possibile perdita di dati.
+D:\Projects\VisualStudio\K-Means\Dependecies\Utils\OGLUtils.h(156,17): warning C4244: 'argomento': conversione da 'int' a 'GLfloat'. Possibile perdita di dati.
+D:\Projects\VisualStudio\K-Means\Dependecies\Utils\OGLUtils.h(156,13): warning C4244: 'argomento': conversione da 'int' a 'GLfloat'. Possibile perdita di dati.
+D:\Projects\VisualStudio\K-Means\Dependecies\Utils\OGLUtils.h(163,16): warning C4244: 'argomento': conversione da 'int' a 'GLfloat'. Possibile perdita di dati.
+D:\Projects\VisualStudio\K-Means\Dependecies\Utils\OGLUtils.h(163,13): warning C4244: 'argomento': conversione da 'int' a 'GLfloat'. Possibile perdita di dati.
+D:\Projects\VisualStudio\K-Means\Dependecies\Utils\OGLUtils.h(164,18): warning C4244: 'argomento': conversione da 'int' a 'GLfloat'. Possibile perdita di dati.
+D:\Projects\VisualStudio\K-Means\Dependecies\Utils\OGLUtils.h(164,13): warning C4244: 'argomento': conversione da 'int' a 'GLfloat'. Possibile perdita di dati.
+D:\Projects\VisualStudio\K-Means\Dependecies\Utils\OGLUtils.h(166,26): warning C4244: 'argomento': conversione da 'int' a 'GLfloat'. Possibile perdita di dati.
+D:\Projects\VisualStudio\K-Means\Dependecies\Utils\OGLUtils.h(166,15): warning C4244: 'argomento': conversione da 'int' a 'GLfloat'. Possibile perdita di dati.
+D:\Projects\VisualStudio\K-Means\Dependecies\Utils\OGLUtils.h(167,24): warning C4244: 'argomento': conversione da 'int' a 'GLfloat'. Possibile perdita di dati.
+D:\Projects\VisualStudio\K-Means\Dependecies\Utils\OGLUtils.h(167,15): warning C4244: 'argomento': conversione da 'int' a 'GLfloat'. Possibile perdita di dati.
+D:\Projects\VisualStudio\K-Means\Dependecies\Utils\OGLUtils.h(169,16): warning C4244: 'argomento': conversione da 'int' a 'GLfloat'. Possibile perdita di dati.
+D:\Projects\VisualStudio\K-Means\Dependecies\Utils\OGLUtils.h(169,13): warning C4244: 'argomento': conversione da 'int' a 'GLfloat'. Possibile perdita di dati.
+D:\Projects\VisualStudio\K-Means\Dependecies\Utils\OGLUtils.h(170,24): warning C4244: 'argomento': conversione da 'int' a 'GLfloat'. Possibile perdita di dati.
+D:\Projects\VisualStudio\K-Means\Dependecies\Utils\OGLUtils.h(170,15): warning C4244: 'argomento': conversione da 'int' a 'GLfloat'. Possibile perdita di dati.
+D:\Projects\VisualStudio\K-Means\Dependecies\Utils\OGLUtils.h(172,18): warning C4244: 'argomento': conversione da 'int' a 'GLfloat'. Possibile perdita di dati.
+D:\Projects\VisualStudio\K-Means\Dependecies\Utils\OGLUtils.h(172,13): warning C4244: 'argomento': conversione da 'int' a 'GLfloat'. Possibile perdita di dati.
+D:\Projects\VisualStudio\K-Means\Dependecies\Utils\OGLUtils.h(173,26): warning C4244: 'argomento': conversione da 'int' a 'GLfloat'. Possibile perdita di dati.
+D:\Projects\VisualStudio\K-Means\Dependecies\Utils\OGLUtils.h(173,15): warning C4244: 'argomento': conversione da 'int' a 'GLfloat'. Possibile perdita di dati.
+D:\Projects\VisualStudio\K-Means\K-Means\main.cpp(50,12): warning C4244: 'argomento': conversione da 'time_t' a 'unsigned int'. Possibile perdita di dati.
+D:\Projects\VisualStudio\K-Means\K-Means\main.cpp(48,13): warning C4101: 'height': variabile locale senza riferimenti
+D:\Projects\VisualStudio\K-Means\K-Means\main.cpp(48,6): warning C4101: 'width': variabile locale senza riferimenti
+D:\Projects\VisualStudio\K-Means\K-Means\main.cpp(227,34): warning C4244: 'argomento': conversione da 'int' a 'float'. Possibile perdita di dati.
+D:\Projects\VisualStudio\K-Means\K-Means\main.cpp(227,29): warning C4244: 'argomento': conversione da 'int' a 'float'. Possibile perdita di dati.
+D:\Projects\VisualStudio\K-Means\K-Means\main.cpp(227,17): warning C4244: 'argomento': conversione da 'int' a 'float'. Possibile perdita di dati.
+D:\Projects\VisualStudio\K-Means\K-Means\main.cpp(241,34): warning C4244: 'argomento': conversione da 'int' a 'float'. Possibile perdita di dati.
+D:\Projects\VisualStudio\K-Means\K-Means\main.cpp(241,29): warning C4244: 'argomento': conversione da 'int' a 'float'. Possibile perdita di dati.
+D:\Projects\VisualStudio\K-Means\K-Means\main.cpp(241,17): warning C4244: 'argomento': conversione da 'int' a 'float'. Possibile perdita di dati.
+D:\Projects\VisualStudio\K-Means\K-Means\main.cpp(285,14): warning C4244: 'return': conversione da 'double' a 'int'. Possibile perdita di dati.
+D:\Projects\VisualStudio\K-Means\Dependecies\Utils\OGLUtils.h(123): warning C4715: 'InitWindow': non tutti i percorsi di controllo restituiscono un valore
   K-Means.vcxproj -> D:\Projects\VisualStudio\K-Means\Debug\K-Means.exe

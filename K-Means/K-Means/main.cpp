@@ -1,10 +1,10 @@
-﻿#include "GLFW/glfw3.h"
+﻿#include "OGLUtils.h"
 #include <stdlib.h>
 #include <iostream>
 #include <math.h>
 #include <time.h>
 
-#define MAX 600
+#define MAX 1000
 
 using namespace std;
 
@@ -29,7 +29,6 @@ struct ClusterT
 
 DataPointsT* dataFront = NULL;
 ClusterT* clusterFront = NULL;
-GLFWwindow* window;
 
 void InitDataPoints();
 void InitClusters();
@@ -42,10 +41,6 @@ void CenterCluster();
 bool ClusterComplete();
 void PrintOwnData();
 void PrintRound(int);
-void DrawCircle(float cx, float cy, float r, int num_segments);
-int InitWindow(int width, int height);
-void ClearDevice();
-void UpdateWindow();
 
 int main()
 {
@@ -73,7 +68,7 @@ int main()
 	cout << endl << " Clustering Complete!" << endl;
 	system("pause");
 	
-	glfwTerminate();
+	CloseGraph();
 	return 0;
 }
 
@@ -225,11 +220,11 @@ void DrawData()
 	DataPointsT* current;
 	int rad = 3;
 
-	
+	SetColor(255, 255, 255);
 	current = dataFront;
 	while (current != NULL)
 	{
-		DrawCircle(current->x, current->y, rad, 100);
+		Circle(current->x, current->y, rad);
 		current = current->next;
 	}
 }
@@ -239,10 +234,11 @@ void DrawCluster()
 	ClusterT* current;
 	int rad = 6;
 
+	SetColor(0, 255, 0);
 	current = clusterFront;
 	while (current != NULL)	
 	{
-		DrawCircle(current->x, current->y, rad, 100);
+		Circle(current->x, current->y, rad);
 		current->dataCount = 0;
 		current = current->next;
 	}
@@ -258,25 +254,10 @@ void DrawConnections(DataPointsT* data)
 
 	cluster->dataCount++;
 	
-	glBegin(GL_LINES);
-		glColor3f(0, 255, 255);
-		glVertex2f(data->x, data->y);
-		glVertex2f(cluster->x, cluster->y);
-	glEnd();
+	SetColor(0, 255, 255);
+	Line(data->x, data->y, cluster->x, cluster->y);
 }
 
-void DrawCircle(float cx, float cy, float r, int num_segments)
-{
-	glBegin(GL_LINE_LOOP);
-	glColor3f(255, 255, 255);
-	for (int ii = 0; ii < num_segments; ii++) {
-		float theta = 2.0f * 3.1415926f * float(ii) / float(num_segments);//get the current angle 
-		float x = r * cosf(theta);//calculate the x component 
-		float y = r * sinf(theta);//calculate the y component 
-		glVertex2f(x + cx, y + cy);//output vertex 
-	}
-	glEnd();
-}
 
 //OTHERS
 bool ClusterComplete()
@@ -302,38 +283,4 @@ int Distance(int x1, int y1, int x2, int y2)
 		return abs(x1 - x2);
 	else
 		return sqrt(pow(abs(x1 - x2), 2) + pow(abs(y1 - y2), 2));
-}
-
-int InitWindow(int width, int height)
-{	
-	if (!glfwInit())
-		return 1;
-
-	window = glfwCreateWindow(width, height, "OpenGL", NULL, NULL);
-	if (!window)
-	{
-		glfwTerminate();
-		return 1;
-	}
-	glfwMakeContextCurrent(window);
-
-	glfwGetFramebufferSize(window, &width, &height);
-	glClear(GL_COLOR_BUFFER_BIT);
-	glDisable(GL_DEPTH_TEST);
-	glMatrixMode(GL_PROJECTION);
-	glLoadIdentity();
-	glOrtho(0, width, height, 0, 0, 1);
-	glMatrixMode(GL_MODELVIEW);
-}
-
-void ClearDevice()
-{
-	glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
-	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-}
-
-void UpdateWindow()
-{
-	glfwSwapBuffers(window);
-	glfwPollEvents();
 }
