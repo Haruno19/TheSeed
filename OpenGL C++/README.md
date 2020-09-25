@@ -1,15 +1,13 @@
 
 
- OPENGL UTILITIES FOR VISUAL STUDIO C++ USING GLFW3 OPEN-SOURCE LIBRARY 
- ver. 09.2020 by github.com/Haruno19    
+#**OPENGL UTILITIES FOR VISUAL STUDIO C++ USING GLFW3 OPEN-SOURCE LIBRARY**
+ 					   ver. 09.2020 by github.com/Haruno19    
 
 GLFW: https://www.glfw.org/
 
 
-********************* D O C U M E N T A T I O N *****************************
 
-
-	HOW TO USE on VISUAL STUDIO 2019 C++ EMPTY PROJEC
+##HOW TO USE on VISUAL STUDIO 2019 C++ EMPTY PROJEC
 
 1. Copy Dependencies Folder into Solution Directory
 2. Properties > C++ > General > Additional Include Directories		: $(SolutionDir)Dependecies/GLFW/include;$(SolutionDir)Dependecies/Utils
@@ -19,7 +17,7 @@ GLFW: https://www.glfw.org/
 
 ------------------------------------------------------------------------------------------------
 
-	FUNCTION SHORTCUTS
+##FUNCTION SHORTCUTS
 Shortcuts name are taken from BGI library.
 
 CORE FUNCTIONS
@@ -37,25 +35,25 @@ Line(int x1, int y1, int x2, int y2) - Draws a line from (x1;y1) to (x2;y2)
 
 -------------------------------------------------------------------------------------------------
 
-	EXAMPLES
+#EXAMPLES
 Here's and example code to draw a red line and a blue circle
 
 
-#include "OGLUtils.h"
+	#include "OGLUtils.h"
 
-int main()
-{
-	InitWindow(500,500);	//initializes a 500x500 window
+	int main()
+	{
+		InitWindow(500,500);	//initializes a 500x500 window
+	
+		SetColor(255,0,0);		//sets color to red
+		Line(0,0,500,500);		//draws a line from the top left corner to the bottom right
+		SetColor(0,0,255);		//sets color to blue
+		Circle(250,250,50);		//draws a circle at (250,250) 
+		UpdateWindow();			//renders the drawings
 
-	SetColor(255,0,0);		//sets color to red
-	Line(0,0,500,500);		//draws a line from the top left corner to the bottom right
-	SetColor(0,0,255);		//sets color to blue
-	Circle(250,250,50);		//draws a circle at (250,250) 
-	UpdateWindow();			//renders the drawings
+		system("pause");
+		CloseGraph();			//destroys the window
 
-	system("pause");
-	CloseGraph();			//destroys the window
-
-	return 0;
-}
+		return 0;
+	}
 
