@@ -41,6 +41,15 @@ Shortcuts name are taken from BGI library.
 
 -------------------------------------------------------------------------------------------------
 
+## VARIABLED
+
+**CORE**
+
+	(int) MAXX 				- Int value for the window's width
+	(int) MAXY 				- Int value for the window's height
+						  Both are initialized to NULL and set with InitWindow()
+-------------------------------------------------------------------------------------------------
+
 ## EXAMPLE
 Here's and example code to draw a red line and a blue circle
 
