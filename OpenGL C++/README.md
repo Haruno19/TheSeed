@@ -20,14 +20,10 @@ GLFW: https://www.glfw.org/
 Shortcuts name are taken from BGI library.
 
 **CORE FUNCTIONS**
-
- InitWindow(int width, int height)	 - Initializes the window of the specified size
- 
- CloseGraph()				 - Destroys all the windows
- 
- ClearDevice()				 - Blacks out the whole window
- 
- UpdateWindow()				 - Renders all the drawings on the window
+InitWindow(int width, int height)	 - Initializes the window of the specified size
+CloseGraph()				 - Destroys all the windows
+ClearDevice()				 - Blacks out the whole window
+UpdateWindow()				 - Renders all the drawings on the window
 
 
 **COLORS**
