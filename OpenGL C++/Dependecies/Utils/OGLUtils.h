@@ -1,7 +1,7 @@
 /*
   /------------------------------------------------------------------------\
   | OPENGL UTILITIES FOR VISUAL STUDIO C++ USING GLFW3 OPEN-SOURCE LIBRARY |
-  |									   ver. 09.2020 by github.com/Haruno19 |
+  |			               ver. 09.2020 by github.com/Haruno19 |
   \------------------------------------------------------------------------/
 
 ********************* D O C U M E N T A T I O N *****************************
@@ -66,6 +66,7 @@ int main()
 
 /*----------------WINDOW OBJECT DECLARATION--------------*/
 GLFWwindow* window;
+int MAXX=NULL, MAXY=NULL;
 
 /*---------------FUNCTION LIST BY TYPE-------------------*/
 //Core Functions
@@ -73,6 +74,8 @@ int InitWindow(int width, int height);
 void ClearDevice();
 void UpdateWindow();
 #define CloseGraph() glfwTerminate()
+int GetMaxX() { return MAXX;  }
+int GetMaxY() { return MAXY; }
 //Colors
 void SetColor(int r, int g, int b) { glColor3f(r,g,b); }
 //Shapes
@@ -85,6 +88,8 @@ void Line(int x1, int y1, int x2, int y2);
 //CORE
 int InitWindow(int width, int height)
 {	
+	MAXX = width;
+	MAXY = height;
 	if (!glfwInit())
 		return 1;
 
