@@ -51,7 +51,7 @@ Shortcuts name are taken from BGI library.
 				  Both are initialized to NULL and set with InitWindow()
 -------------------------------------------------------------------------------------------------
 
-## EXAMPLE
+## SAMPLE CODE
 Here's and example code to draw a red line and a blue circle
 
 
